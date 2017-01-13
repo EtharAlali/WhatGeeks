@@ -33,6 +33,6 @@ Because not every organisation is ethical. Here are some exemptions which take u
 * Organisations, their staff, directors, board and agents who carry on unethical business practises, are late/non-payers and/or have been subject to legal proceedings for non-payment of invoices, whether or not those proceedings were concluded. This is indefinite. If you've not dealt with us, then you're fine. We do this because we support ethical business practices. If you're not sure, get in touch. 
 * Commercial purposes - This is not the same as the previous point, which excludes the aforementioned agents in the event they use it for non-commercial purposes. 
 
-Restrictive? Yes, but so is Donald Trump. Otherwise it's a Attribution-NonCommercial-ShareAlike 4.0 International license. NOte, exemptions are enforceable.
+Restrictive? Yes, but so is Donald Trump. Otherwise it's a Attribution-NonCommercial-ShareAlike 4.0 International license. Note, exemptions are enforceable.
 
 (c) [Axelisys](http://www.axelisys.co.uk) 2016+
