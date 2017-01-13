@@ -30,4 +30,4 @@ Because not every organisation is ethical. Here are some exemptions which take u
 
 Restrictive? Yes, but so is Donald Trump.
 
-(c) Axelisys 2016+
+(c) [Axelisys](http://www.axelisys.co.uk) 2016+
