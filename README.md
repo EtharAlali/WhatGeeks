@@ -2,9 +2,14 @@
 
 [![N|Solid](https://s3.amazonaws.com/CAPS-SSE/echo_developer/9f6d6fe4b2d9449189db15dd0ddc3a8f/APP_ICON?versionId=1QmbHNuSy59R3iQR08g5iyxuM_U6kYfF&AWSAccessKeyId=AKIAIPQVCQDA4Q7UBRKQ&Expires=1484341618&Signature=zSYRsfi%2BivSCJTWNtPU0yHLKuXc%3D)](https://nodesource.com/products/nsolid)
 
-WhatGeeks is an Alexa skill which tells you what Geeky events are on in the North West. 
+WhatGeeks is an Alexa skill which tells you what Geeky events are on in the North West. If you want to see it working, visit:
 
-It references the Tech North West Calendar at technw.org and is being donated to the tech community as part of a team building and tech learnin' exercise. 
+[Axelisys on YouTube](https://www.youtube.com/watch?v=UQn0aUOU-mY)
+
+The skill references the Tech North West Calendar at technw.org and is being donated to the tech community as part of a team building and tech learnin' exercise. 
+
+#### What runs it? 
+It runs on AWS Lambda with an Alexa trigger. JSON messages are sent by Alexa, processes by this Lambda fundtion and 
 
 #### Pull Requests
 We do accept pull requests. 
