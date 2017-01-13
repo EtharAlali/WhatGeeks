@@ -19,8 +19,20 @@ function onIntent(intentRequest, session, callback) {
             // Parse the result for today
             var client = new Client();
             var sessionAttributes = {};
+            var timeMin = new Date();
+            var timeMax = new Date(timeMin.getTime() + 86400000);
+            timeMax.setHours(0);
+            timeMax.setMinutes(0);
+            timeMax.setSeconds(0);
 
-            client.get("https://clients6.google.com/calendar/v3/calendars/a73q3trj8bssqjifgolb1q8fr4@group.calendar.google.com/events?calendarId=a73q3trj8bssqjifgolb1q8fr4%40group.calendar.google.com&singleEvents=true&timeZone=Europe%2FLondon&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2016-09-26T00%3A00%3A00%2B01%3A00&timeMax=2016-11-07T00%3A00%3A00%2B01%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs",
+            console.log(timeMax);
+            console.log(timeMin);
+
+            var getEventsQuery = "https://clients6.google.com/calendar/v3/calendars/a73q3trj8bssqjifgolb1q8fr4@group.calendar.google.com/events?calendarId=a73q3trj8bssqjifgolb1q8fr4%40group.calendar.google.com&singleEvents=true&timeZone=Europe%2FLondon&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=" + timeMin.toISOString() + "&timeMax=" + timeMax.toISOString() + "&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs";
+
+            console.log(getEventsQuery);
+
+            client.get(getEventsQuery,
                            function (data, response) {
                                var shouldEndSession = true;
                                console.log("data received");
@@ -35,17 +47,12 @@ function onIntent(intentRequest, session, callback) {
                                    for (var i = 0; i < data.items.length; i++) {
                                        var event = data.items[i];
                                        var date = new Date();
-                                       var eventStartDate = new Date(event.start.dateTime);
-                                       var eventEndDate = new Date(event.end.dateTime);
+                                       console.log("event=" + i)
+                                       console.log("We have=" + event.summary);
 
-                                       if ((eventStartDate <= date) && (eventEndDate >= date)) {
-                                           console.log("event=" + i)
-                                           console.log("We have=" + event.summary);
+                                       totalEventsTotal++;
 
-                                           totalEventsTotal++;
-
-                                           eventText += (event.summary + " at " + event.location);
-                                       }
+                                       eventText += (event.summary + " at " + event.location);
                                    }
                                    if (totalEventsTotal === 0)
                                        eventText = "There are no events today";
