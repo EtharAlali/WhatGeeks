@@ -9,7 +9,7 @@ WhatGeeks is an Alexa skill which tells you what Geeky events are on in the Nort
 The skill references the Tech North West Calendar at technw.org and is being donated to the tech community as part of a team building and tech learnin' exercise. 
 
 #### What runs it? 
-It runs on AWS Lambda with an Alexa trigger. JSON messages are sent by Alexa, processes by this Lambda fundtion and 
+It runs on AWS Lambda with an Alexa trigger. JSON messages are sent by Alexa, processes by this Lambda function which returns an appropriate JSON response. 
 
 #### Pull Requests
 We do accept pull requests. 
