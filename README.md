@@ -1,7 +1,5 @@
 # WhatGeeks
 
-(https://s3.amazonaws.com/CAPS-SSE/echo_developer/9f6d6fe4b2d9449189db15dd0ddc3a8f/APP_ICON?versionId=1QmbHNuSy59R3iQR08g5iyxuM_U6kYfF&AWSAccessKeyId=AKIAIPQVCQDA4Q7UBRKQ&Expires=1484341618&Signature=zSYRsfi%2BivSCJTWNtPU0yHLKuXc%3D)
-
 WhatGeeks is an Alexa skill which tells you what Geeky events are on in the North West. If you want to see it working, visit:
 
 [Axelisys on YouTube](https://www.youtube.com/watch?v=UQn0aUOU-mY)
